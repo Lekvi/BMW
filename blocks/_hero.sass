@@ -1,0 +1,100 @@
+.firstScreen
+    background-image: url('/image/1st-bg.png') 
+    background-size: cover
+    &-words
+        display: block
+        text-align: center
+        font-size: 185px
+        text-transform: uppercase
+        color: #131210
+        text-shadow: 0 0 165px rgba(0, 0, 0, 0.9)
+        &-space
+            word-spacing: 500px
+    &__car
+        position: absolute
+        top: 25%
+        left: 30%
+        z-index: 3   
+    &-slogan
+        text-align: center
+        font-size: 18px
+        color: #ffffff    
+        margin-top: 150px
+    &__navigation
+        display: flex
+        justify-content: space-around    
+        margin-top: 50px
+        ul
+            list-style-type: none
+            a
+                text-decoration: none
+                text-transform: capitalize
+                color: $secondary
+                font-size: 30px
+                margin: 0 200px
+                +bold
+                &:hover
+                    color: rgba(#fff, 0.6 )
+            li
+                display: inline
+        &-button
+            padding-left: 70px
+            padding-right: 70px        
+@media (max-width: 1850px)
+  .firstScreen
+    &__navigation-list 
+        ul
+            a   
+                margin: 0 100px
+@media ( max-width: 1515px  ) 
+   .firstScreen
+        &-words
+            font-size: 130px
+        &__car
+            img
+                width: 70%;                    
+@media ( max-width: 1250px  )
+    .firstScreen
+        min-height: auto
+        &__navigation-list 
+        ul
+            a   
+                margin: 0 50px
+        &-words
+            font-size: 100px
+            &-space
+                word-spacing: 250px
+        &__car
+            img
+                width: 50%; 
+@media ( max-width:910px )    
+    .firstScreen
+        &-slogan
+            margin-top: 100px
+        &__navigation
+            display: flex
+            flex-direction: column
+            margin-top: 20px
+            &-button
+                margin: auto
+        &__navigation-list 
+            ul
+                display: flex
+                flex-direction: column
+                align-items: center
+                li
+                    margin: 20px 0       
+@media ( max-width:850px )  
+    .firstScreen
+        .contacts
+            display: none
+        &__car
+            display: none
+        &-words
+            font-size: 50px
+            margin-top: 50px
+            color: rgba($secondary, 0.7 )   
+            &-space
+                word-spacing: 0px; 
+        &-slogan
+            margin-top: 50px
