@@ -301,6 +301,46 @@ section {
   margin: 60px 0;
 }
 
+@media (max-width: 1250px) {
+  .secondScreen__brands {
+    margin-bottom: 100px;
+  }
+  .secondScreen__about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .secondScreen__about img {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .secondScreen__about-button {
+    display: block;
+    margin: auto;
+  }
+  .secondScreen__description {
+    text-align: center;
+  }
+}
+
+@media (max-width: 850px) {
+  .secondScreen__brands {
+    margin-bottom: 100px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .secondScreen__brands img {
+    padding: 10px 15px;
+  }
+  .secondScreen__about img {
+    width: 80%;
+  }
+}
+
 .announcement {
   background-color: #135ec5;
   min-height: auto;
@@ -330,5 +370,27 @@ section {
 .announcement-button {
   margin: auto;
   display: block;
+}
+
+@media (max-width: 1250px) {
+  .announcement-img {
+    left: 25%;
+  }
+}
+
+@media (max-width: 850px) {
+  .announcement {
+    padding: 145px 0;
+  }
+  .announcement-img {
+    display: none;
+  }
+  .announcement__title {
+    font-size: 10vw;
+  }
+}
+
+.thirdScreen {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

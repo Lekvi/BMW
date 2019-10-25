@@ -27,7 +27,29 @@
         color: rgba($secondary, 0.7 )
         line-height: 20px
         margin: 60px 0
-    &__about-button:hover
-        
-        
+@media (max-width: 1250px)
+    .secondScreen
+        &__brands
+            margin-bottom: 100px
+        &__about  
+            flex-direction: column;
+            align-items: center; 
+            img
+                margin-right: 0
+                margin-bottom: 50px
+            &-button
+                display: block;
+                margin: auto;    
+        &__description
+            text-align: center
+@media ( max-width:850px )  
+    .secondScreen
+        &__brands
+            margin-bottom: 100px
+            flex-wrap: wrap
+            img
+                padding: 10px 15px
+        &__about  
+            img
+                width: 80%       
 
